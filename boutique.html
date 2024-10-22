@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique de Fleurs</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <h1>Boutique de Fleurs</h1>
+        <nav> 
+            <header> 
+                <nav> 
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="boutique.html">Boutique</a></li>
+                        <li><a href="sectionservices.html">Services</a></li>
+                        <li><a href="sectiongalerie.html">Galerie</a></li>
+                        <li><a href="sectionnouscontacter.html">Nous Contacter</a></li>
+                        <li><a href="apropos.html">À propos</a></li>
+                    </ul>
+                </nav>
+            </header>
+     </header>
+
+
+    <main>
+        <section class="boutique">
+             <h2>Nos Fleurs</h2>
+             <div class="product-grid">
+
+            <div class="product-item">
+                
+                <img src="ORCHIDE.JPG" alt="Orchidées">
+                <h3>Orchidées</h3>
+                <p>Prix : 3500 HTG</p>
+                <p class="description">Orchidées élégantes pour une touche sophistiquée.</p>
+
+                <button class="commander" onclick="afficherFormulaire()">Passer la Commande</button>
+            </div>
+
+            <div class="product-item">
+                <img src="bouquetderoses.JPG" alt="Bouquet de roses">
+                <h3>Bouquet de Roses</h3>
+                <p>Prix : 2000HTG</p>
+                <p class="description "> Un bouquet de roses fraîches pour toutes occasions.</p>
+                <button class="commander" onclick="afficherFormulaire()">Passer la Commande</button>
+            </div>
+
+
+
+            <div class="product-item">
+                <img src="cadeaufleuri.JPG" alt="Cadeau fleuri">
+                <h3>Cadeau fleuri</h3>
+                <p class="price">Prix : 1500 HTG</p>
+                <p class="description">Un cadeau floral parfait pour surprendre vos proches.</p>
+                <button class="commander" onclick="afficherFormulaire()">Passer la Commande</button>
+                </section>
+
+        <section class="formulaire" id="formulaire" style="display:none;">
+            <h2>Formulaire de Commande</h2>
+            <form id="orderForm" onsubmit="envoyerCommande(event)">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" required>
+
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" required>
+
+                <label for="telephone">Numéro de téléphone (WhatsApp) :</label>
+                <input type="text" id="telephone" required>
+
+                <label for="adresse">Adresse :</label>
+                <input type="text" id="adresse" required>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    
+
+    <script>
+        function afficherFormulaire() {
+            document.getElementById('formulaire').style.display = 'block';
+        }
+
+        function envoyerCommande(event) {
+            event.preventDefault(); // Empêche le rechargement de la page
+
+            const nom = document.getElementById('nom').value;
+            const prenom = document.getElementById('prenom').value;
+            const telephone = document.getElementById('telephone').value;
+            const adresse = document.getElementById('adresse').value;
+
+            const message = `Nouvelle commande:\nNom: ${nom}\nPrénom: ${prenom}\nTéléphone: ${telephone}\nAdresse: ${adresse}`;
+            const phoneNumber = "50944453073"; // Remplacez par votre numéro WhatsApp
+            const url = `https://wa.me/${50944453073}?text=${encodeURIComponent(message)}`;
+
+            window.open(url); // Ouvre WhatsApp
+        }
+    </script>
+    <!-- Section Pied de page -->
+    <footer>
+        <p>&copy; 2024 Mr Flower 509  | Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

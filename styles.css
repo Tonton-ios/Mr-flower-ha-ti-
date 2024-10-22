@@ -1,0 +1,283 @@
+/* Style de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Menu de navigation */
+header {
+    background-color: palevioletred;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 30px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Bannière principale */
+.hero {
+    background-image: url('https://example.com/banner.jpg'); /* Mettre un lien vers une vraie image */
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(6, 134, 117);
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin: 15px 0;
+}
+
+.cta-button {
+    background-color: palevioletred;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #eb0808;
+}
+
+/* Section des services */
+.services {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #c30d4dd5;
+}
+
+.service-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    margin: 10px;
+}
+
+.service-item h3 {
+    color: palevioletred;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 1rem;
+}
+
+/* Pied de page */
+footer {
+    background-color: #eb0808;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.image-header{ 
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* CSS BOUTIQUE.HTML */ 
+
+/* Style de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Menu de navigation */
+header {
+    background-color: palevioletred;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Boutique */
+.boutique {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.boutique h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: palevioletred;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-item h3 {
+    color: palevioletred;
+    margin-bottom: 10px;
+}
+
+.product-item p.price {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.add-to-cart {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #e6b800;
+}
+
+/* Panier */
+.cart {
+    margin-top: 50px;
+}
+
+.cart h2 {
+    font-size: 1.8rem;
+    color: palevioletred;
+    margin-bottom: 20px;
+}
+
+.cart-items {
+    margin-bottom: 20px;
+    text-align: left;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.cart-total {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.checkout {
+    background-color: palevioletred;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkout:hover {
+    background-color: palevioletred;
+}
+
+/* Pied de page */
+footer {
+    background-color: palevioletred;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
